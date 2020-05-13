@@ -1,6 +1,6 @@
 :root {
-    --min-height: 250px;
-    --next-slide: 80px;
+    --min-height: 380px;
+    --next-slide: 40px;
 }
 
 .slider {
@@ -13,7 +13,7 @@
     width: calc(100% - var(--next-slide));
     flex-shrink: 0;
     display: grid;
-    grid-template-columns: 1fr 100px 50px var(--next-slide);
+    grid-template-columns: 1fr auto auto var(--next-slide);
     align-items: center;
 }
 
