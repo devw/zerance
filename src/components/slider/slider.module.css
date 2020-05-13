@@ -1,4 +1,43 @@
+:root {
+    --min-height: 250px;
+    --next-slide: 80px;
+}
+
 .slider {
-    height: 500px;
-    background-color: chocolate;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.slider>div {
+    width: calc(100% - var(--next-slide));
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: 1fr 100px 50px var(--next-slide);
+    align-items: center;
+}
+
+.slider img {
+    width: 100%;
+    z-index: -1;
+    min-height: var(--min-height);
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    object-fit: cover;
+}
+
+.slider span {
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.slider a {
+    background-color: #ddd;
+    opacity: 0.7;
+    grid-column: 3;
+    grid-row: 1;
+    padding: 20px;
 }
