@@ -1,23 +1,20 @@
 .banner {
-    width: 100%;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
-
-.banner h3 {
-    text-align: center;
+    justify-content: center;
+    height: 400px;
 }
 .banner h2 {
-    text-align: center;
     font-size: 30pt;
     max-width: 600px;
+    text-align: center;
+    margin: 0;
 }
 
-/* 48em = 768px @ 16pt font */
-@media (min-width: 48em) {
+@media all and (max-width: 600px) {
     .banner {
-        height: 400px;
+        height: auto;
     }
-
 }
