@@ -1,0 +1,38 @@
+:root {
+    --height: 60px;
+    --font-size: 1.5em;
+}
+
+.infinite-text {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffcd1a;
+    height: var(--height);
+    width: 100%;
+}
+
+.infinite-text p {
+    white-space: nowrap;
+    position: absolute;
+}
+
+.infinite-text p span {
+    color: #fff;
+    display: inline-block;
+    padding-left: 100%;
+    animation: text-scroll 10s linear infinite;
+    font-size: var(--font-size);
+}
+
+.infinite-text p:nth-child(2) span {
+    animation-delay: 5s;
+}
+
+@keyframes text-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
