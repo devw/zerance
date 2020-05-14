@@ -1,20 +1,36 @@
-.portfolio {
-    background: #000;
-    min-height: 300px;
-    ;
+:root {
+    --max-width-img: 130px;
+    --max-width-portfolio: 900px;
 }
 
-.clients {
+.portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
-    max-width: 900px;
+    justify-items: center;
+    max-width: var(--max-width-portfolio);
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 0 25px;
 }
 
-.clients div:nth-child(1) {
+.portfolio h2 {
     color: white;
     font-size: 2em;
     grid-column: 1/-1;
     text-align: center;
+}
+
+.portfolio img {
+    width: 100%;
+    max-width: var(--max-width-img);
+    filter: invert(100%);
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 450px) {
+    .portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+    .portfolio img {
+        width: 100px;
+    }
 }

@@ -1,13 +1,13 @@
 import React from "react";
-import { Client } from "./client";
+import { Item } from "./item";
 import classes from "./portfolio.module.css";
 
 export const Portfolio = () => (
-    <div className={classes.portfolio}>
-        <div className={classes.clients}>
-            <div>Nos client sont Geniaux !</div>
+    <div style={{ "background-color": "#000" }}>
+        <div className={classes.portfolio}>
+            <h2>Nos client sont Geniaux !</h2>
             {Array.from(Array(15)).map((x, i) => (
-                <Client key={i}></Client>
+                <Item key={i}></Item>
             ))}
         </div>
     </div>
