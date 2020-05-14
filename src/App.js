@@ -11,15 +11,7 @@ function App() {
             <Top></Top>
             <Portfolio></Portfolio>
             <Slider></Slider>
-            {/* <div class="row">
-                <Portfolio></Portfolio>
-            </div>
-            <div class="row">
-                <Slider></Slider>
-            </div>
-            <div class="row">
-                <TextInfinite></TextInfinite>
-            </div> */}
+            <TextInfinite></TextInfinite>
         </>
     );
 }

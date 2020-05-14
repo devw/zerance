@@ -1,6 +1,7 @@
 .portfolio {
     background: #000;
-    min-height: 300px;;
+    min-height: 300px;
+    ;
 }
 
 .clients {
@@ -11,28 +12,9 @@
     padding: 50px 0;
 }
 
-.clients div:nth-child(1) { 
-    color:white;
+.clients div:nth-child(1) {
+    color: white;
     font-size: 2em;
     grid-column: 1/-1;
     text-align: center;
-  }
-
-/* .portfolio li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: bisque;
-} */
-  
-/* .text-infinite {
-    background: #ffcd1a;
-    font-size: 27,41 pt;
-    color: white;
-    height: 30px;
 }
-  
-.text-infinite > .text-animation {
-    animation: flowing 8s linear infinite;
-    transform: translateX(100%);
-} */
