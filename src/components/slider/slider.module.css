@@ -6,7 +6,6 @@
 .slider {
     display: flex;
     overflow: auto;
-    scroll-behavior: smooth;
 }
 
 .slider>div {
@@ -32,4 +31,11 @@
     grid-column: 3;
     grid-row: 1;
     padding: 20px;
+}
+
+.slider a i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
 }
