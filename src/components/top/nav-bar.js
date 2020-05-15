@@ -13,16 +13,16 @@ export const NavBar = () => (
         </label>
         <ul className={classes.menu}>
             <li>
-                <a href="#dont">Nos Clients</a>
+                <a href="#clients">Nos Clients</a>
             </li>
             <li>
-                <a href="#forget">Notre Offre</a>
+                <a href="#offre">Notre Offre</a>
             </li>
             <li>
-                <a href="#forget">Le Studio</a>
+                <a href="#studio">Le Studio</a>
             </li>
             <li>
-                <a href="#forget">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     </header>

@@ -3,6 +3,7 @@
   src: url('./ttf/Karla-Regular.ttf');
 }
 
-body {
+* {
+  scroll-behavior: smooth;
   font-family: 'KarlaRegular';
 }

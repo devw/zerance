@@ -10,6 +10,8 @@
     color: #fff;
     min-width: 100%;
     text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 100;
 }
 
 .portfolio a {
