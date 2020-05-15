@@ -17,16 +17,16 @@
 }
 
 .infinite-text p span {
-    animation: text-scroll 30s linear infinite;
+    animation: text-scroll 10s linear infinite;
     color: #fff;
     display: inline-block;
     font-size: var(--font-size);
     font-weight: 600;
-    padding-left: 100vw;
+    padding-left: 100%;
 }
 
 .infinite-text p:nth-child(2) span {
-    animation-delay: 15s;
+    animation-delay: 5s;
 }
 
 @keyframes text-scroll {
