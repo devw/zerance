@@ -5,7 +5,10 @@ export const Banner = () => (
     <div className={classes.banner}>
         <div>
             <h3>Since 2016</h3>
-            <h2>&lt; We create from scratch amazing Shopify &#47;&gt;</h2>
+            <h2>
+                &lt; We create from scratch amazing <span>Shopify</span>{" "}
+                &#47;&gt;
+            </h2>
         </div>
     </div>
 );
