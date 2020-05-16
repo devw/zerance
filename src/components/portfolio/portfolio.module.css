@@ -1,22 +1,22 @@
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     max-width: 900px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .portfolio h2 {
     color: #fff;
     min-width: 100%;
-    text-transform: uppercase;
     font-size: 1.4em;
     font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .portfolio a {
     filter: invert(100%);
-    margin: auto;
     width: 17%;
 }
 
