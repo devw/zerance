@@ -22,8 +22,8 @@
 
 .portfolio img {
     min-width: 60px;
-    padding: 2vw 1vw;
-    width: inherit;
+    padding: 2vw 2.5vw;
+    width: 80%;
 }
 
 @media (max-width: 444px) {
