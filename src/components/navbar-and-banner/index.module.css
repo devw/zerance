@@ -29,6 +29,7 @@
 .grid-container>div:nth-child(1) img {
   min-height: 400px;
   height: calc(50vw);
+  margin-bottom: 50px;
 }
 
 @media (max-width: 600px) {

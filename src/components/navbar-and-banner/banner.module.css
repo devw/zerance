@@ -1,7 +1,6 @@
 .banner {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -10,6 +9,11 @@
     text-align: center;
     font-size: 6vmax;
     max-width: 60vmax;
+}
+
+.banner h3 {
+    font-size: 2.5vmax;
+    font-weight: 100;
 }
 
 .banner>div>h2 {
@@ -23,6 +27,12 @@
 }
 
 @media (max-width: 600px) {
+    .banner {
+        transform: translateX(-3vw);
+    }
+    .banner h2 {
+        font-size: 2.3rem;
+    }
     .banner>h2 {
         transform: rotate(85deg);
         transition-duration: 1s;
@@ -35,7 +45,6 @@
     }
     .banner>div>h2 {
         display: block;
-        font-size: 6vmax;
         transform: translateX(40px);
     }
     .banner h2, h3 {
@@ -43,5 +52,6 @@
     }
     .banner h3 {
         transform: translateX(-20px);
+        font-size: 3vmax;
     }
 }
