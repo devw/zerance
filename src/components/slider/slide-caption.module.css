@@ -17,6 +17,8 @@
     background: url("../../images/brush_stroke.png") bottom;
     background-size: contain;
     background-repeat: no-repeat;
+    display: inline-block;
+    font-size: 1.2em;
     padding-bottom: 5px;
 }
 
