@@ -1,36 +1,47 @@
 .banner {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.banner h3 {
+.banner>h2 {
     text-align: center;
+    font-size: 6vmax;
+    max-width: 60vmax;
 }
 
-.banner h2 {
-    text-align: center;
-    font-size: 30pt;
-    max-width: 600px;
+.banner>div>h2 {
+    display: none;
 }
 
 .banner h2>span {
-    background: url("../../images/brush_stroke.png") bottom;
+    background: url("https://github.com/devw/zerance/raw/master/src/images/brush_stroke.png") bottom;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-@media (max-width: 580px) {
-    .banner h2 {
-        font-size: 24pt;
-        padding: 0 42px;
+@media (max-width: 600px) {
+    .banner>h2 {
+        transform: rotate(85deg);
+        transition-duration: 1s;
+        width: 250px;
+        padding: 70px 0;
+        height: 100px;
     }
-}
-
-@media (max-width: 500px) {
-    .banner h2 {
-        font-size: 20pt;
-        padding: 0 60px;
+    .banner>h2>span {
+        display: none;
+    }
+    .banner>div>h2 {
+        display: block;
+        font-size: 6vmax;
+        transform: translateX(40px);
+    }
+    .banner h2, h3 {
+        margin: 0;
+    }
+    .banner h3 {
+        transform: translateX(-20px);
     }
 }

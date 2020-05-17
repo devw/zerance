@@ -30,3 +30,10 @@
   min-height: 400px;
   height: calc(50vw);
 }
+
+@media (max-width: 600px) {
+  .grid-container>div:nth-child(1) img {
+    transform: rotate(-5deg);
+    transition-duration: 1s;
+  }
+}
