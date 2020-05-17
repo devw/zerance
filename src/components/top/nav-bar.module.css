@@ -1,14 +1,15 @@
 .header a {
     color: #000;
 }
-  
+
 /* header */
+
 .header {
     background-color: #fff;
     width: 100%;
     z-index: -1;
 }
-  
+
 .header ul {
     margin: 0;
     padding: 0;
@@ -16,36 +17,37 @@
     overflow: hidden;
     background-color: #fff;
 }
-  
+
 .header li a {
     display: block;
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
 }
-  
-.header li a:hover,
-.header input:hover {
+
+.header li a:hover, .header input:hover {
     background-color: #f4f4f4;
     border-radius: 10px;
 }
-  
+
 .logo {
     display: block;
     float: left;
 }
+
 .logo img {
     max-width: 120px;
 }
-  
+
 /* menu */
+
 .menu {
     clear: both;
     float: right;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
-  
+
 /* menu icon */
 
 .menuIcon {
@@ -55,7 +57,7 @@
     position: relative;
     user-select: none;
 }
-  
+
 .menuIcon span {
     background: #333;
     display: block;
@@ -63,9 +65,8 @@
     position: relative;
     width: 18px;
 }
-  
-.menuIcon span:before,
-.menuIcon span:after {
+
+.menuIcon span:before, .menuIcon span:after {
     background: #333;
     content: '';
     display: block;
@@ -74,40 +75,41 @@
     transition: all .2s ease-out;
     width: 100%;
 }
-  
+
 .menuIcon span:before {
     top: 5px;
 }
-  
+
 .menuIcon span:after {
     top: -5px;
 }
-  
+
 /* menu btn */
+
 .header input {
     display: none;
 }
-  
-.header input:checked ~ ul {
+
+.header input:checked~ul {
     max-height: 240px;
 }
-  
-.header input:checked ~ label span {
+
+.header input:checked~label span {
     background: transparent;
 }
-  
-.header input:checked ~ label span:before {
+
+.header input:checked~label span:before {
     transform: rotate(-45deg);
-    top:0;
+    top: 0;
 }
-  
-.header input:checked ~ label span:after {
+
+.header input:checked~label span:after {
     transform: rotate(45deg);
-    top:0;
+    top: 0;
 }
-  
-  
+
 /* 48em = 768px @ 16pt font */
+
 @media (min-width: 48em) {
     .header li {
         float: left;
