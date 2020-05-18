@@ -21,14 +21,14 @@
 .header li a {
     display: block;
     padding: 20px 20px;
-    font-size: 20px;
+    font-size: calc(4vmin);
     text-decoration: none;
     font-weight: 900;
 }
 
 .header li a:hover {
     background: url("../../images/brush_stroke.png") bottom;
-    background-size: contain;
+    background-size: 50%;
     background-repeat: no-repeat;
 }
 
