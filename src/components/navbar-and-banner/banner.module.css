@@ -2,18 +2,20 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .banner>h2 {
     text-align: center;
-    font-size: 6vmax;
+    font-size: 5vmax;
     max-width: 60vmax;
 }
 
 .banner h3 {
     font-size: 2.8vmax;
     font-weight: 100;
+    margin: 0;
 }
 
 .banner :nth-child(3) {
@@ -30,21 +32,23 @@
     .banner {
         justify-content: space-between;
         align-items: flex-start;
-        height: 50vmax;
+        height: 18rem;
     }
     .banner h3 {
-        transform: translate(110px, -20px);
+        transform: translateX(104px);
     }
     .banner :nth-child(2) {
-        transform: translatex(40px) rotate(85deg);
+        transform: translate(30px, 20px) rotate(85deg);
         transition-duration: 1s;
-        width: 40vmax;
+        font-size: 1.7rem;
+        width: 14rem;
     }
     .banner :nth-child(2)>span {
         display: none;
     }
     .banner :nth-child(3) {
         display: block;
-        transform: translatex(130px);
+        transform: translate(120px, 20px);
+        font-size: 1.8rem;
     }
 }
