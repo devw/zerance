@@ -1,4 +1,5 @@
 .grid-container {
+  margin-top: 5px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
@@ -29,9 +30,10 @@
 .grid-container>div:nth-child(1) img {
   min-height: 400px;
   height: calc(50vw);
+  margin-bottom: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .grid-container>div:nth-child(1) img {
     transform: rotate(-5deg);
     transition-duration: 1s;

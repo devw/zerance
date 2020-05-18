@@ -1,0 +1,54 @@
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner>h2 {
+    text-align: center;
+    font-size: 5vmax;
+    max-width: 60vmax;
+}
+
+.banner h3 {
+    font-size: 2.8vmax;
+    font-weight: 100;
+    margin: 0;
+}
+
+.banner :nth-child(3) {
+    display: none;
+}
+
+.banner h2>span {
+    background: url("../../images/brush_stroke.png") bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 720px) {
+    .banner {
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 18rem;
+    }
+    .banner h3 {
+        transform: translateX(104px);
+    }
+    .banner :nth-child(2) {
+        transform: translate(30px, 20px) rotate(85deg);
+        transition-duration: 1s;
+        font-size: 1.7rem;
+        width: 14rem;
+    }
+    .banner :nth-child(2)>span {
+        display: none;
+    }
+    .banner :nth-child(3) {
+        display: block;
+        transform: translate(120px, 20px);
+        font-size: 1.8rem;
+    }
+}

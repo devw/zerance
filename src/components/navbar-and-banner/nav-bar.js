@@ -16,7 +16,7 @@ export const NavBar = () => (
                 <a href="#clients">Nos Clients</a>
             </li>
             <li>
-                <a href="#offre">Notre Offre</a>
+                <a href="#clients">Notre Offre</a>
             </li>
             <li>
                 <a href="#studio">Le Studio</a>
