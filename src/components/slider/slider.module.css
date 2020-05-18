@@ -10,6 +10,7 @@
 
 .slider>div {
     width: calc(100% - var(--next-slide));
+    max-height: 90vh;
     flex-shrink: 0;
     display: grid;
     grid-template-columns: 1fr auto auto var(--next-slide);
