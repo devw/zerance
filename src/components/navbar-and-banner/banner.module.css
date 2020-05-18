@@ -28,7 +28,7 @@
     background-repeat: no-repeat;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     .banner {
         justify-content: space-between;
         align-items: flex-start;
