@@ -1,7 +1,19 @@
 ## Introduction
 
-To build this web-application, I used the following programming languages: CSS, HTML and Javascript,
-and the following tools: git, npm (6.13.7), webpack, babel and react.
+To build this web-application, I used the following programming languages: 
+
+ - CSS, 
+ - HTML and 
+ - Javascript,
+ 
+and the following tools: 
+
+ - git, 
+ - npm (6.13.7), 
+ - webpack, 
+ - babel and 
+ - react.
+
 I used the JavaScript tools only to bundle different files and generate static assets representing the different modules/components of the web-application.
 
 ## Available Scripts
